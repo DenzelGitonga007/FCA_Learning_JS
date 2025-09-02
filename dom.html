@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | JS</title>
+</head>
+<body>
+    <h1 id="title">Welcome!</h1>
+
+    <button onclick="changeTitle()">Click me</button>
+
+    <script>
+        // DOM - Document Object Model
+        // It is a programming interface for web documents.
+        // It represents the page so that programs can change the document structure, style, and content.
+        // The DOM represents the document as nodes and objects. That way, programming languages can connect to the page.
+
+        // DOM methods:
+        // 1. getElementById()
+        // 2. getElementsByClassName()
+        // 3. getElementsByTagName()
+        // 4. querySelector()
+        // 5. querySelectorAll()
+
+        // Create a function to change the text of the h1 element 
+        function changeTitle() {
+            // Body of the function 
+
+            // Create the variable to store the h1 element
+            let heading = document.getElementById("title");
+            // Change the color of the heading (the h1 element)
+            heading.style.color = "green";
+            // Change the text content of the  h1 element (heading variable)
+            heading.textContent = "Hello, world!";
+            
+        };
+
+      
+
+    </script>
+</body>
+</html>
