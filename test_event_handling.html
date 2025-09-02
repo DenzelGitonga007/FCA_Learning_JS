@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Handling Practice</title>
+</head>
+<body>
+
+  <h1>Event Handling Practice</h1>
+  <p id="myPara">This is my paragraph.</p>
+
+  <button id="textBtn">Change Text</button>
+  <button id="bgBtn">Change Background</button>
+
+  <script>
+    // Get elements
+    let para = document.getElementById("myPara");
+    let textBtn = document.getElementById("textBtn");
+    let bgBtn = document.getElementById("bgBtn");
+
+    // Change text when first button is clicked
+    textBtn.onclick = function() {
+      para.textContent = "The text has been updated!";
+    }
+
+    // Change background color when second button is clicked
+    bgBtn.onclick = function() {
+      document.body.style.backgroundColor = "yellow";
+    }
+  </script>
+
+</body>
+</html>

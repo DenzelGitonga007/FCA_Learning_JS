@@ -6,46 +6,16 @@
     <title>Event Handling | JS</title>
 </head>
 <body>
-
-    <!-- Inline Event Handling -->
-    <button onclick="alert('Button clicked!')">Inline Click Me</button>
-
-
-    <!-- Event Property (element.onclick) -->
-    <button id="myBtn">Element Click Me</button>
-
-    <script>
-        let btn = document.getElementById("myBtn");
-        btn.onclick = function() {
-            alert("You clicked the button!");
-        }
-    </script>
-
-
-    <!-- addEventListener() (best practice ) -->
-    <button id="btn">Eventlistener Click Me</button>
-
-    <script>
-        let button = document.getElementById("btn");
-        button.addEventListener("click", function() {
-            alert("Button was clicked!");
-        });
-    </script>
-
-
-
-
-
-<button id="btn">Click Me</button>
-<p id="result"></p>
-
+    <h6>Learning Event Handling</h6>
+    <button id="my_btn">Click me</button>
 
 <script>
-  let btn = document.getElementById("btn");
-  btn.addEventListener("click", function() {
-    document.getElementById("result").textContent = "Button was clicked!";
-  });
+    // Create a variable to hold the button element by its ID 
+    let btn = document.getElementById("my_btn");
+    // Event handling action for button click
+    btn.onclick = function() {
+        alert("Button clicked");
+    };
 </script>
-
 </body>
 </html>
